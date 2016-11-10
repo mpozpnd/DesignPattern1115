@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+allprojects {
+    apply plugin: 'application'
+    mainClassName = 'sample.GradleMain'
+}
+
+
+
+run {
+    if (project.hasProperty('args')){
+        args project.args.split('\\s+')
+    }
+}

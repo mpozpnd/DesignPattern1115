@@ -1,0 +1,7 @@
+apply plugin: 'application'
+mainClassName = "exe2.Main"
+run {
+    if (project.hasProperty('args')){
+        args project.args.split('\\s+')
+    }
+}
