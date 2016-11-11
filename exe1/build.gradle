@@ -1,5 +1,5 @@
 apply plugin: 'application'
-mainClassName = "exe1.Main"
+mainClassName = "exe1.ans.Main"
 run {
     if (project.hasProperty('args')){
         args project.args.split('\\s+')
