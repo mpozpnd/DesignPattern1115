@@ -8,7 +8,6 @@ public class CoffeeServer {
 	
 	void Serve(){
 		impl.rawServe();
-		System.out.println("☕️");
 		System.out.println("----------------------");
 	}
 }
